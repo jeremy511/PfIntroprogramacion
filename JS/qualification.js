@@ -85,15 +85,15 @@
                     </tr>`;
 
         } else {
-          document.querySelector('finalxam').focus();
+          document.querySelector('#finalxam').focus();
           alert('el rango es de 0 a 30');
         }
       } else {
-        document.querySelector('practices').focus();
+        document.querySelector('#practices').focus();
         alert('el rango es de 0 a 40');
       }
     } else {
-      document.querySelector('xam').focus();
+      document.querySelector('#xam').focus();
       alert('el rango es de 0 a 30');
     }
 
