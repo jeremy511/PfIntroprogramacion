@@ -1,0 +1,129 @@
+.list-group{
+
+  margin: 3% 30% 0% 30%;
+}
+
+.input-form{
+
+  margin: 1% 0% 0% 10% ;
+}
+
+.lead {
+  color: rgb(65, 65, 65);
+  font-size: 2.35rem;
+  font-weight: 500;
+  margin: 2% 0% 2% 9% ;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.table-striped{
+
+margin: -20% 70% 0% 35%;
+width:800px;
+height:auto;
+
+}
+
+.btn-secondary:hover {
+  color: rgb(0, 0, 0);
+  background-position: right center;
+  border-color:transparent;
+}
+.btn-secondary {
+  color: #fff;
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  border-color:rgba(148,187,233,1);
+  border-width: 0ex;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(92, 92, 92);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+#delete{
+
+  color: #fff;
+  background-image: linear-gradient(to right, #ffaa83 0%, #faa78c 51%, #fa6449 100%);
+  border-color:rgba(148,187,233,1);
+  border-width: 0ex;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(92, 92, 92);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+
+}
+#delete:hover {
+  color: rgb(0, 0, 0);
+  background-position: right center;
+  border-color:transparent;
+}
+.line{
+
+  border: 0.4px ridge rgb(189, 189, 189);
+  width:auto ;
+  margin: 3% 10% 4% 10%;
+
+}
+
+#all-temp{
+
+margin: 5% 0% 5% 0%;
+
+}
+#all-temp > div
+{
+
+  margin: 0% 0% 0% 10%;
+
+  }
+
+ #all-p
+{
+
+  margin: 0% 0% 0% 3%;
+
+  }
+
+
+
+.alert-dark{
+  width: 200px;
+  height: 100px;
+  color: #585858;
+  background-color: #dfdfdf;
+  text-align: center;
+
+}
+
+.move {
+
+  margin: 3% 0% 0% 34%;
+}
+
+
+.move2{
+
+  margin: 3% 0% 0% 0%;
+}
+
+.moveb {
+  margin: 2% auto 3px 35%;
+}
+
+
+.alert-light{
+
+  margin: 1% auto 2% auto;
+  width: 300px;
+  text-align: center;
+  border: #dfdfdf 0.4px solid
+
+}
