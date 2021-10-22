@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="Css/bootstrap.css" />
+  <link rel="stylesheet" href="Css/style.css" />
+  <script src="JS-design/bootstrap.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><span>
+          <<img src="Imgs/world.png" style="width: 30px; height: 30px" />/>
+        </span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="util.html">Utilitarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jobreq.html">Solicitud</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <form id="form">
+
+    <p class="lead">Registro y consulta de calificaciones:</p>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="showmsg"
+      style="margin: 0% 30% 0% 20%;">
+      <strong>Hola!</strong> Recuerda cada que envies un registro, volver a escribir para ingresar una nueva materia
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="input-form">
+
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="Cantidad de asignaturas"
+          aria-label="Recipient's username" id="numasig" onfocus="this.value=''" required />
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Asignatura" id="course" onfocus="this.value=''" required />
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="Examen parcial" id="xam" onfocus="this.value=''" required
+          onchange="Sumavg(this.value)" />
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="Practicas" aria-label="Recipient's username"
+          id="practices" onfocus="this.value=''" required />
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="Examen final" id="finalxam" onfocus="this.value=''"
+          required />
+      </div>
+
+
+
+      <button type="submit" class="btn btn-secondary btn-lg" id="buttonClick">Guardar</button>
+      <button type="reset" class="btn btn-secondary btn-lg" id="delete" onclick="clear()">Borrar</button>
+
+
+
+    </div>
+
+
+  </form>
+
+  <table class="table table-striped" id="emptable">
+    <thead>
+      <tr>
+        <th scope="col">Asignatura</th>
+        <th scope="col">Total asignatura</th>
+        <th scope="col">Examen Parcial</th>
+        <th scope="col">Practicas</th>
+        <th scope="col">Examen Final</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Promedio</th>
+        <th>.</th>
+        <th><span id="xamall"></span></th>
+        <th><span id="pracall"></span></th>
+        <th><span id="finalxamall"></span></th>
+      </tr>
+      <tr>
+        <th>aqui va la nota mas alta</th>
+        <th></th>
+        <th><span id="qualhighxam"></span></th>
+        <th><span id="qualhighprac"></span></th>
+        <th><span id="qualhighfinal"></span></th>
+      </tr>
+      <tr>
+        <th>aqui va la nota mas bajita</th>
+        <th> <th><span id="qualowxam"></span></th></th>
+        <th><span id="qualowxam"></span></th>
+        <th>.</th>
+        <th>.</th>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+<script src="JS/qualification.js"></script>
+
+</html>
